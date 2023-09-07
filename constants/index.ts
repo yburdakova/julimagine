@@ -7,7 +7,7 @@ import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from "react-icon
 import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from "react-icons/si";
 
 //fonts
-import { Sora } from '@next/font/google';
+import { Sora } from "next/font/google";
 
 //Layout data
 export const sorafont = Sora({
