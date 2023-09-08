@@ -17,8 +17,10 @@ export const sorafont = Sora({
 })
 
 // Nav data
+
+
 export const navData: NavDataProps[] = [
-    { name: 'home', path: '/', icon: HiHome  },
+    { name: 'home', path: '/', icon: HiHome },
     { name: 'about', path: '/about', icon: HiUser },
     { name: 'services', path: '/services', icon: HiRectangleGroup },
     { name: 'work', path: '/work', icon: HiViewColumns },

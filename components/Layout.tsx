@@ -6,12 +6,13 @@ import TopLeftImg from './TopLeftImg';
 
 import { sorafont } from '../constants';
 
-const Layout = ({children}) => {
+const Layout = ({children}: any) => {
   return (
     <div className={`page bg-site text-white bg-cover bg-no-repeat ${sorafont.variable} font-sora relative`}>
+      <TopLeftImg/>
       <Nav/>
       <Header/>
-      <TopLeftImg/>
+      
       {children}
     </div>
   );
