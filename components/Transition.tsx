@@ -12,7 +12,7 @@ function Transition() {
         initial='initial'
         animate='animate'
         exit='exit'
-        transition={{delay:0.2, duration:0.6, ease: 'easeInOut'}}
+        transition={{delay:0.1, duration:0.6, ease: 'easeInOut'}}
       ></motion.div>
       <motion.div
         className='fixed bottom-0 z-20 w-screen h-screen topp-0 right-full bg-[#3b2d71]'
@@ -20,7 +20,7 @@ function Transition() {
         initial='initial'
         animate='animate'
         exit='exit'
-        transition={{delay:0.4, duration:0.6, ease: 'easeInOut'}}
+        transition={{delay:0.2, duration:0.6, ease: 'easeInOut'}}
       ></motion.div>
       <motion.div
         className='fixed bottom-0 z-10 w-screen h-screen topp-0 right-full bg-[#4b3792]'
@@ -28,7 +28,7 @@ function Transition() {
         initial='initial'
         animate='animate'
         exit='exit'
-        transition={{delay:0.6, duration:0.6, ease: 'easeInOut'}}
+        transition={{delay:0.3, duration:0.6, ease: 'easeInOut'}}
       ></motion.div>
     </>
     

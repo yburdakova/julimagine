@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Nav from './Nav';
-import Header from './Header';
-import TopLeftImg from './TopLeftImg';
+import {Nav, Header, TopLeftImg} from './'
 
 import { sorafont } from '../constants';
 
