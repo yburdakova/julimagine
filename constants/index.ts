@@ -1,4 +1,5 @@
 import { NavDataProps, WorkSlidesProps, ServiceDataProps, TestimonialDataProps, AboutDataProps } from './interfaces';
+import { Variants } from 'framer-motion'
 
 // icons
 import { HiHome, HiUser, HiViewColumns, HiRectangleGroup, HiChatBubbleBottomCenterText, HiEnvelope } from 'react-icons/hi2';
@@ -17,8 +18,6 @@ export const sorafont = Sora({
 })
 
 // Nav data
-
-
 export const navData: NavDataProps[] = [
     { name: 'home', path: '/', icon: HiHome },
     { name: 'about', path: '/about', icon: HiUser },
@@ -191,3 +190,19 @@ export const aboutData: AboutDataProps[] = [
         ]
     }
 ];
+
+//Transition Variants
+export const transirionVariants: Variants = {
+    initial: {
+        x:'100%',
+        width:'100%',
+    },
+    animate:{
+        x: '0%',
+        width: '0%',
+    },
+    exit:{
+        x: ['0%', '100%'],
+        width: ['0%', '100%'],
+    }
+}
