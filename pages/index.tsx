@@ -21,7 +21,7 @@ function Home() {
             exit='hidden'
             className="mb-4 md:mb-8 h1"
           >
-            Transforming Ideas <br /> Intro {' '}
+            Transforming Ideas <br /> Into {' '}
             <span className="text-accent">Reality</span>
           </motion.h1>
           {/* Subtitle */}
@@ -32,7 +32,7 @@ function Home() {
             exit='hidden'
             className='max-w-sm mx-auto mb-2 md:mb-10 xl:max-w-xl xl:mx-0 xl:mb-16'
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eligendi at asperiores corrupti, dolore aut quos magnam, quas similique natus ipsum aliquam neque obcaecati placeat nisi veniam quae sed quibusdam.
+            Imagination is the first step towards changing reality, as it is where ideas are born, and with the help of creativity, they transform into living projects. This process promotes development and innovation, altering the face of reality and infusing it with new energy and values.
           </motion.p>
           {/* My Projects button */}
           <div className='relative z-50 flex justify-center xl:hidden'>

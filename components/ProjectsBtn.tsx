@@ -12,7 +12,7 @@ function ProjectsBtn() {
         className='relative w-[100px] h-[100px] md:w-[185px] md:h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group'
       >
         <Image
-          src={'/rounded-text1.png'}
+          src={'/rounded-text.png'}
           alt='Rounded text'
           width={141}
           height={148}

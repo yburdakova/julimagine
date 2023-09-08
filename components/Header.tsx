@@ -13,7 +13,7 @@ function Header() {
           {/* Logo */}
           <Link href='/'>
             <Image
-              src={'/logo1.svg'}
+              src={'/logo.svg'}
               alt="logo"
               width={220}
               height={48}
