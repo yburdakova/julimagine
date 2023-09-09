@@ -27,7 +27,7 @@ const About = () => {
       </motion.div>
       <div className="container flex flex-col items-center h-full mx-auto xl:flex-row gap-x-6">
         {/* Text */}
-        <div className="flex flex-col justify-center flex-1">
+        <div className="flex flex-col justify-center flex-1 my-6 sm:my-0 ">
           <motion.h2 
             className="h2"
             variants={fadeIn('right', 0.2)}
@@ -42,7 +42,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="hidden xs:block max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="hidden sm:block max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
           Behind every magnificent design or illustration, there is a captivating story of inspiration and creativity, crafted in collaboration between the artist and the client.
           </motion.p>
@@ -108,7 +108,7 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px] text-xs xs:text-lg"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px] text-sm sm:text-lg"
         >
           <div className="flex mx-auto mb-4 gap-x-4 xl:gap-x-8 xl:mx-0">
             {aboutData.map(( item, indexItem ) => {
@@ -128,7 +128,7 @@ const About = () => {
           >
             {aboutData[index].info.map(( item, indexItem) => {
               return(
-                <div key={indexItem} className='flex flex-col items-center flex-1 text-white/60 md:flex-row max-w-max gap-x-2'>
+                <div key={indexItem} className='flex flex-col items-center flex-1 text-xs text-white/60 md:flex-row max-w-max gap-x-2 sm:text-lg'>
                   <div className='mb-2 font-light md:mb-0'>{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div className="">{item.stage}</div>
