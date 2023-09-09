@@ -42,7 +42,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="hidden xs:block max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
           Behind every magnificent design or illustration, there is a captivating story of inspiration and creativity, crafted in collaboration between the artist and the client.
           </motion.p>
@@ -108,7 +108,7 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px] text-xs xs:text-lg"
         >
           <div className="flex mx-auto mb-4 gap-x-4 xl:gap-x-8 xl:mx-0">
             {aboutData.map(( item, indexItem ) => {
