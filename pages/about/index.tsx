@@ -43,13 +43,13 @@ const About = () => {
           <div className="flex flex-col items-center py-2 xl:py-6 gap-y-2 xl:gap-y-4 xl:items-start">
             {aboutData[index].info.map(( item, indexItem) => {
               return(
-                <div key={indexItem}>
-                  <div>{item.title}</div>
-                  <div className="hidden xl:flex">-</div>
+                <div key={indexItem} className='flex flex-col items-center flex-1 text-white/60 md:flex-row max-w-max gap-x-2'>
+                  <div className='mb-2 font-light md:mb-0'>{item.title}</div>
+                  <div className="hidden md:flex">-</div>
                   <div className="">{item.stage}</div>
                   <div className="flex gap-x-4">
                     {item.icons?.map(( icon, indexItem ) => {
-                      return <div className="text-2xl" key={indexItem}>{React.createElement(icon)}</div>
+                      return <div className="text-2xl text-white" key={indexItem}>{React.createElement(icon)}</div>
                     })}
                   </div>
                   

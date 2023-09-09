@@ -35,7 +35,7 @@ function Home() {
             Imagination is the first step towards changing reality, as it is where ideas are born, and with the help of creativity, they transform into living projects. This process promotes development and innovation, altering the face of reality and infusing it with new energy and values.
           </motion.p>
           {/* My Projects button */}
-          <div className='relative z-50 flex justify-center xl:hidden'>
+          <div className='relative flex justify-center z-8 xl:hidden'>
             <ProjectsBtn/>
           </div>
           <motion.div 
