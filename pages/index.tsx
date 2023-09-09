@@ -19,7 +19,7 @@ function Home() {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="mb-4 md:mb-8 h1"
+            className="mt-6 mb-4 sm:mt-0 md:mb-8 h1 "
           >
             Transforming Ideas <br /> Into {' '}
             <span className="text-accent">Reality</span>
@@ -30,7 +30,7 @@ function Home() {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='max-w-sm mx-auto mb-2 md:mb-10 xl:max-w-xl xl:mx-0 xl:mb-16'
+            className='max-w-sm mx-auto mb-6 text-sm sm:mb-2 sm:text-xl md:mb-10 xl:max-w-xl xl:mx-0 xl:mb-16'
           >
             Imagination is the first step towards changing reality, as it is where ideas are born, and with the help of creativity, they transform into living projects. This process promotes development and innovation, altering the face of reality and infusing it with new energy and values.
           </motion.p>
