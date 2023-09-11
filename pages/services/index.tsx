@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import { fadeIn } from '../../variants';
-import { serviceData } from '../../constants';
 import { ServiceSlider, Bulb, Circles } from '../../components';
 
 function Services() {

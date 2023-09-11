@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-import {RxCrop, RxDesktop, RxPencil2, RxRocket, RxArrowTopRight} from 'react-icons/rx'
+import { RxArrowTopRight} from 'react-icons/rx'
 
 import { serviceData } from '../constants';
 
