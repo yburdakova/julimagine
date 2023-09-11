@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { FreeMode, Pagination } from 'swiper';
+import { Pagination } from 'swiper';
 
 import 'swiper/css';
-import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 import {BsArrowRight} from 'react-icons/bs'
@@ -17,7 +16,6 @@ const WorkSlider = () => {
       spaceBetween={10}
       pagination={{
         clickable: true,
-        
       }}
       modules={[Pagination]}
       className='h-[280ppx] sm:h-[480px]'
