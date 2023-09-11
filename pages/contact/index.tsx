@@ -27,7 +27,7 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch('/submit-form', {
+      const response = await fetch('https://julimagine.vercel.app/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
