@@ -1,10 +1,11 @@
-const mysql = require('mysql2/promise');
+import { NextApiRequest, NextApiResponse } from 'next';
+import mysql from 'mysql2/promise';
 
-export default async function handler(req, res) {
-    if (req.method === 'POST') {
-        try {
-        const connection = await mysql.createConnection({
-            host: 'db5014446249.hosting-data.io', // Укажите хост MySQL
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  if (req.method === 'POST') {
+    try {
+      const connection = await mysql.createConnection({
+        host: 'db5014446249.hosting-data.io', // Укажите хост MySQL
             user: 'dbu916338', // Укажите пользователя MySQL
             password: 'juli6SE0KtmuA#8!DB', // Укажите пароль MySQL
             database: 'julimagineDB', // Укажите имя вашей базы данных
