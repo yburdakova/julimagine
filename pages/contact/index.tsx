@@ -52,7 +52,6 @@ function Contact() {
             initial='hidden'
             animate='show'
             exit='hidden' 
-            action="submit"
             className='flex flex-col flex-1 w-full gap-6 mx-auto'
           >
             <div className="flex w-full gap-x-6">
