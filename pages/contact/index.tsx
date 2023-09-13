@@ -11,15 +11,16 @@ function Contact() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     try {
+      console.log('Данные запроса перед отправкой:', JSON.stringify({ name, email, subject, message }));
       const response = await fetch('/api/submitForm', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, email, subject, message }), // Включите все поля в запрос
+        body: JSON.stringify({ name, email, subject, message }), 
       });
   
       if (response.ok) {
@@ -52,6 +53,7 @@ function Contact() {
             initial='hidden'
             animate='show'
             exit='hidden' 
+            onSubmit={handleSubmit}
             className='flex flex-col flex-1 w-full gap-6 mx-auto'
           >
             <div className="flex w-full gap-x-6">
@@ -60,6 +62,8 @@ function Contact() {
                 placeholder='name' 
                 className="input" 
                 value={name} 
+                name="name"
+                autoComplete="on"
                 onChange={(e) => setName(e.target.value)}
               />
               <input 
@@ -67,6 +71,8 @@ function Contact() {
                 placeholder='email' 
                 className="input" 
                 value={email} 
+                name="email"
+                autoComplete="on"
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
@@ -75,12 +81,16 @@ function Contact() {
               placeholder='subject' 
               className="input" 
               value={subject} 
+              name="subject"
+              autoComplete="off"
               onChange={(e) => setSubject(e.target.value)} 
             />
             <textarea 
               placeholder='message' 
               className="textarea"
               value={message} 
+              name="message"
+              autoComplete="off"
               onChange={(e) => setMessage(e.target.value)} 
             ></textarea>
             <button className="border rounded-full btn border-white/50 max-w-[220px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
