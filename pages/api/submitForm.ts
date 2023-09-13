@@ -8,7 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             host: 'db5014446249.hosting-data.io', // Укажите хост MySQL
                 user: 'dbu916338', // Укажите пользователя MySQL
                 password: 'juli6SE0KtmuA#8!DB', // Укажите пароль MySQL
-                database: 'julimagineDB', // Укажите имя вашей базы данных
+                database: 'dbs12012481', // Укажите имя вашей базы данных
         });
 
         const { name, email, subject, message } = req.body;
